@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+:root {
+	--fg-200: hsl(0, 0%, 59%);
+	--fg-300: hsl(227, 10%, 46%);
+	--fg-400: hsl(229, 23%, 23%);
+
+	--bg-100: hsl(255, 100%, 100%);
+	--bg-400: hsl(185, 75%, 39%);
+
+	--fs-base: 1rem;
+	--fs-lg: 1.125rem;
+	--fw-base: 400;
+	--fw-bold: 700;
+
+	--ff-sans: 'Kumbh Sans', sans-serif;
+
+	--br: 1rem;
+	--spacer: 1.5rem;
+}
+body {
+	font-family: var(--ff-sans);
+}
+.site-wrapper {
+	padding: calc(var(--spacer) / 3);
+	display: grid;
+	place-items: center;
+	max-width: 90rem;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 95vh;
+	background: var(--bg-400);
+	background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat;
+	background-size: 60rem, 60rem, 60rem, 60rem;
+	background-position: top -30rem left -30rem, bottom -30rem right -30rem;
+}

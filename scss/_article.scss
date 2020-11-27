@@ -1,0 +1,48 @@
+// article > * + * {
+// 	margin: calc(var(--spacer) * 2) 0;
+// }
+img {
+	position: absolute;
+	--br: 10rem;
+	border: 0.5em solid var(--bg-100);
+	left: 50%;
+	transform: translateX(-50%);
+	top: 5.25rem;
+}
+span {
+	color: var(--fg-200);
+	margin-left: 0.5rem;
+}
+.flex {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 1.5rem;
+}
+.profile-card {
+	position: relative;
+	font-family: inherit;
+	font-size: var(--fs-base);
+	width: clamp(19rem, 5vw, 22rem);
+	height: 23.4375rem;
+	border-radius: var(--br);
+	text-align: center;
+	color: var(--fg-200);
+	background-color: var(--bg-100);
+	background-image: url(../images/bg-pattern-card.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 8.75rem;
+}
+
+h2 {
+	font-size: var(--fs-lg);
+	color: var(--fg-400);
+}
+
+.profile-data {
+	display: flex;
+	padding: 1.5rem 0;
+	justify-content: space-evenly;
+	border-top: 1px solid var(--fg-200);
+}

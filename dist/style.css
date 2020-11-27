@@ -1,0 +1,135 @@
+/*#region +++++ RESET +++++ */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--br);
+}
+
+/*#endregion +++++ RESET +++++ */
+:root {
+  --fg-200: hsl(0, 0%, 59%);
+  --fg-300: hsl(227, 10%, 46%);
+  --fg-400: hsl(229, 23%, 23%);
+  --bg-100: hsl(255, 100%, 100%);
+  --bg-400: hsl(185, 75%, 39%);
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fw-base: 400;
+  --fw-bold: 700;
+  --ff-sans: 'Kumbh Sans', sans-serif;
+  --br: 1rem;
+  --spacer: 1.5rem;
+}
+
+body {
+  font-family: var(--ff-sans);
+}
+
+.site-wrapper {
+  padding: calc(var(--spacer) / 3);
+  display: grid;
+  place-items: center;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 95vh;
+  background: var(--bg-400);
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: 60rem, 60rem, 60rem, 60rem;
+  background-position: top -30rem left -30rem, bottom -30rem right -30rem;
+}
+
+img {
+  position: absolute;
+  --br: 10rem;
+  border: 0.5em solid var(--bg-100);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5.25rem;
+}
+
+span {
+  color: var(--fg-200);
+  margin-left: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.profile-card {
+  position: relative;
+  font-family: inherit;
+  font-size: var(--fs-base);
+  width: clamp(19rem, 5vw, 22rem);
+  height: 23.4375rem;
+  border-radius: var(--br);
+  text-align: center;
+  color: var(--fg-200);
+  background-color: var(--bg-100);
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 8.75rem;
+}
+
+h2 {
+  font-size: var(--fs-lg);
+  color: var(--fg-400);
+}
+
+.profile-data {
+  display: flex;
+  padding: 1.5rem 0;
+  justify-content: space-evenly;
+  border-top: 1px solid var(--fg-200);
+}
+/*# sourceMappingURL=style.css.map */
